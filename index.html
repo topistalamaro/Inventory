@@ -17,20 +17,20 @@
   <body>
     <div class="sidebar-nav">
       <div class="logo">
-        <a href="#">
-          <h1>Inventory</h1>
+        <a href="index.html">
+          <h1>MyInventory</h1>
           <!-- <img src="img/logo-1.png" width="250px"> -->
         </a>
-        <a href="#">
+        <a href="index.html">
           <img src="img/logo-2.png" />
         </a>
       </div>
-      
+     
       <div class="side-nav">
         <ul>
           <li>
             <span><i class="fas fa-tachometer-alt"></i></span>
-            <a href="#">Dashbord</a>
+            <a href="index.html">Dashboard</a>
           </li>
           <li class="add-prod-Btn">
             <span><i class="fas fa-plus"></i></span>
@@ -85,57 +85,56 @@
         <ul>
           <li>
             <span><i class="fas fa-home"></i></span>
-            <h3>Dashboard</h3>
+            <h3>Topie</h3>
           </li>
         </ul>
       </div>
 
       
+
       <div class="content_table">
-        <!-- <div class="title">
-                <h2>Role in Comapny</h2>
-            </div> -->
         <div class="main" id="main">
           <table class="table-items">
             <thead>
               <tr>
                 <td class="tdata">Name</td>
                 <td class="tdata">Description</td>
-                <td class="tdata">category</td>
+                <td class="tdata">Category</td>
                 <td class="tdata">Available Quantity</td>
-                <td class="tdata">Action</td>
+                <td class="tdata">Remove/Edit</td>
                 <td class="tdata">Labels</td>
 
               </tr>
             </thead>
             <tbody id="table_body">
-             
+              
             </tbody>
           </table>
         </div>
       </div>
     </div>
     <div class="modal_container" id="pop_modal">
+        <h2>Add Product</h2>
       <div class="modal">
         <div class="modal_space">
           <label for="">Name: </label>
           <input type="text" id="item_name" required />
         </div>
         <div class="modal_space">
-          <label for="">Desc: </label>
+          <label for="">Describe: </label>
           <input type="text" id="itemDesc" required />
         </div>
         <div class="modal_space">
-          <label for="">Qty: </label>
+          <label for="">Quantity: </label>
           <input type="text" id="itemQty" required />
         </div>
         <div class="modal_space">
-          <label for="">Categories: </label>
+          <label for="">Category: </label>
           <input type="text" id="itemCat" required />
         </div>
 
-        <button class="add-btn">Add</button>
-        <button id="btn-close" onclick="closeModal()">Close</button>
+        <button class="add-btn">Update</button>
+        <button id="btn-close" >Close</button>
       </div>
     </div>
 
